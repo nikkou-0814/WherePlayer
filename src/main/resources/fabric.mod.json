@@ -3,7 +3,7 @@
   "id": "whereplayer",
   "version": "${version}",
   "name": "WherePlayer",
-  "description": "",
+  "description": "プレイヤーの位置を表示",
   "authors": [],
   "contact": {},
   "license": "All-Rights-Reserved",
