@@ -44,7 +44,7 @@ public class whereplayer implements ModInitializer {
         StatusEffectInstance glowingEffect = new StatusEffectInstance(
                 StatusEffects.GLOWING,
                 1200,
-                255,
+                1,
                 true,
                 true
         );
