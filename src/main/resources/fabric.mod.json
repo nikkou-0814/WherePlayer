@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "whereplayer",
+  "version": "${version}",
+  "name": "WherePlayer",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/whereplayer/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "nagoya.nikkou.whereplayer"
+    ]
+  },
+  "mixins": [
+    "whereplayer.mixins.json",
+    {
+      "config": "whereplayer.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
