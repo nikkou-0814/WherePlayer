@@ -37,7 +37,7 @@ public class whereplayer implements ModInitializer {
         ServerPlayerEntity player = context.getSource().getServer().getPlayerManager().getPlayer(playerName);
 
         if (player == null) {
-            context.getSource().sendError(Text.literal("そのプレイヤーは存在しません！"));
+            context.getSource().sendError(Text.literal("そのプレイヤーは存在しません"));
             return 0;
         }
 
