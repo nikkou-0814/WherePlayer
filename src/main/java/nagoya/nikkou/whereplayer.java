@@ -54,9 +54,10 @@ public class whereplayer implements ModInitializer {
         int x = (int) player.getX();
         int y = (int) player.getY();
         int z = (int) player.getZ();
+        String dimension = player.getWorld().getRegistryKey().getValue().toString().replace("minecraft:", "");
 
-        Text positionMessage = Text.literal(playerName + " is at [" + x + ", " + y + ", " + z + "]").formatted(Formatting.AQUA);
-        Text waypointMessage = Text.literal("xaero-waypoint:" + playerName + " is here" + ":S:" + x + ":" + y + ":" + z + ":3:false:0:Internal-overworld-waypoints");
+        Text positionMessage = Text.literal(playerName + " is at [" + x + ", " + y + ", " + z + "] in dimension " + dimension).formatted(Formatting.AQUA);
+        Text waypointMessage = Text.literal("xaero-waypoint:" + playerName + " is here" + ":S:" + x + ":" + y + ":" + z + ":3:false:0:Internal-" + dimension + "-waypoints");
 
         context.getSource().sendFeedback(
                 (Supplier<Text>) () -> positionMessage,
