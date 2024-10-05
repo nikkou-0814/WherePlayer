@@ -14,3 +14,6 @@
 - 発光の効果を付与
 - 位置情報をチャットに表示
 - Xaero's Mapでプレイヤーの位置のウェイポイントを共有(※導入しないと使用できません)
+
+## SpigotMC版
+[このプラグインのFabricMC版](https://github.com/nikkou-0814/Pos-SpigotMCPlugin)
