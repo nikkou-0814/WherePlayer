@@ -16,4 +16,4 @@
 - Xaero's Mapでプレイヤーの位置のウェイポイントを共有(※導入しないと使用できません)
 
 ## SpigotMC版
-[このプラグインのFabricMC版](https://github.com/nikkou-0814/Pos-SpigotMCPlugin)
+[このプラグインのSpigotMC版](https://github.com/nikkou-0814/Pos-SpigotMCPlugin)
