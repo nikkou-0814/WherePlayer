@@ -71,7 +71,7 @@ public class whereplayer implements ModInitializer {
         int x = (int) player.getX();
         int y = (int) player.getY();
         int z = (int) player.getZ();
-        String dimension = player.getWorld().getRegistryKey().getValue().toString().replace("minecraft:", "");
+        String dimension = player.getEntityWorld().getRegistryKey().getValue().toString().replace("minecraft:", "");
 
         send_text(playerName + " は座標 [" + x + ", " + y + ", " + z + "] にいます。\nバイオーム: " + dimension);
         send_text("xaero-waypoint:" + playerName + " is here" + ":S:" + x + ":" + y + ":" + z + ":3:false:0:Internal-" + dimension + "-waypoints");
